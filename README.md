@@ -1,4 +1,4 @@
-# ✨ Project Milestones Overview ✨
+# ✨ Project Overview ✨
 
 This project aims to explore the feasibility and efficiency of deploying a Social Network application across geo-distributed data centers, focusing on balancing carbon emissions and quality of service.
 
