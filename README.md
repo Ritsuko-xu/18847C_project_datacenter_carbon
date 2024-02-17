@@ -36,5 +36,3 @@ This project aims to explore the feasibility and efficiency of deploying a Socia
   - Conclude with recommendations based on the project findings.
 
 ---
-
-_Your contributions to this project will pave the way for more sustainable and efficient cloud computing solutions. Let's make a difference together!_
