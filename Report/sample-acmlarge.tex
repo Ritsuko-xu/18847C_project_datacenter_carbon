@@ -204,6 +204,7 @@
 	\maketitle
 	
 	\section{Introduction}
+ 
 	In recent years, the digital revolution has dramatically increased the demand for data center services, leading to a surge in energy consumption and associated carbon emissions. Data centers are crucial for storing, managing, and processing vast amounts of data, supporting everything from cloud computing to social networking services. However, they are also among the most energy-intensive facilities, contributing significantly to global carbon emissions. It is estimated that by 2030, the data center industry could account for 8\% of global carbon emissions, highlighting the urgent need for sustainable practices within this sector (Cao et al., 2021).
 
 Major technology companies, including Google and Facebook, have recognized the environmental impact of their data centers and committed to achieving carbon neutrality in their operations. These commitments represent a significant shift towards sustainability in the technology sector, focusing on reducing carbon footprints through the adoption of renewable energy sources and more efficient energy management practices. For instance, Google has pledged to operate on carbon-free energy 24/7 by 2030, a commitment that requires innovative approaches to energy management and operational flexibility (Lehnhoff et al., 2021).
@@ -212,6 +213,17 @@ This paper explores the possibility of reducing carbon emissions in data centers
 
 Our investigation is set against the backdrop of increasing efforts to mitigate the environmental impact of digital infrastructure. As data centers become increasingly pivotal to our digital lives, the imperative to address their environmental footprint grows stronger. By examining the interplay between data center operations and carbon emissions, we hope to offer valuable perspectives on achieving more sustainable data center practices across the industry.
 
+For more insights and related work on carbon-neutral strategies and their implementation in large-scale data centers, refer to the comprehensive surveys by Cao et al. (2021), which discuss both policy instruments and technological methodologies towards carbon neutrality in data centers, highlighting current efforts by industry leaders such as Google and Facebook.
+
+	\section{Related Work}
+
+        In recent years, researchers have recognized the significant part data centers play in carbon emission and started looking for solutions. A lot of studies prove that it is possible to reduce data center carbon emission by migrating workloads from fossil-fuel-heavy data centers to low-carbon ones that utilize renewable energy \cite{Techbrief, Proveidea}.
+
+Several researches were carried out aimed at providing a guide to workloads scheduling and orchestration across geo-distributed data centers. One popular direction is to build mathematical models to compute a scheduling recommendation by optimizing metrics in terms of emission and energy consumption \cite{Mathguide, Renewcooling}, while little attention is paid to the QoS. GA-Par measures data transmission latency, but the focus of this framework is application security on the cloud instead of performance metrics with more effects on user experience \cite{Gapar}. Stratus is a graph-based system that uses Voronoi partitions to determine which data centre requests should be routed to \cite{Stratus}. It makes trade-off among latency, carbon emissions and electricity cost when making a scheduling decision. One downside of this work is that the researchers did not use application benchmarks or examine the QoS of real-world applications.
+
+There are also a few studies about the impacts of cross-datacenter scheduling on QoS. A group of researchers evaluated the performance of microservices using metrics of CPU usage and 99\%-ile latency in the situation where some microservices of the applications are migrated to remote data centers when the local done does not have enough resources. They utilized three open-sourced microservice benchmarks of the DeathStarBench, SocialNetwork, MediaService, and HotelReservation for the experiment. What microservices of the applications should be migrated to a remote data center in order to mitigate the performance reduce is demonstrated in the work as well \cite{Qossche}.
+        
+ 
 	\section{Template Overview}
 	As noted in the introduction, the ``\verb|acmart|'' document class can
 	be used to prepare many different kinds of documentation --- a
